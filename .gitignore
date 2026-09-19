@@ -1,0 +1,45 @@
+
+/results/
+/checkpoints/
+/wandb/
+/adapters/
+/outputs/
+/data/raw/
+/data/processed/
+/adapters/
+
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.safetensors
+
+*.csv
+*.parquet
+*.pkl
+*.xlsx
+*.zip
+*.log
+nohup.out
+* copy*.py
+
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+.env
+
+environment.yml
+
+# 폴더 깊이와 상관없이 제외 (위의 /results/ 등은 루트 한 곳에만 적용됨)
+**/wandb/
+**/results/
+**/checkpoints/
+
+# 데이터 / 사전학습 체크포인트 / 로그
+*.gz
+.DS_Store
+/datasets/
+/new_data_preparation_clean/
+/review_checkpoints/
+catboost_info/
