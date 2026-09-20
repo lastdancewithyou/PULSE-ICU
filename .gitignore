@@ -7,6 +7,8 @@
 /data/raw/
 /data/processed/
 /adapters/
+/baselines/iTransformer/
+/baselines/tsmixer/
 
 *.pth
 *.pt
@@ -43,3 +45,10 @@ environment.yml
 /new_data_preparation_clean/
 /review_checkpoints/
 catboost_info/
+# Third-party baselines are fetched by baselines/setup_baselines.sh (our code lives in baselines/)
+/iTransformer/
+/DuETT/
+/strats/
+# Mapping tables (no patient data) needed by the DuETT preprocessing; re-included despite *.csv / *.xlsx above
+!/baselines/duett/duett_preprocessing/unit_map.csv
+!/baselines/duett/duett_preprocessing/YAIB_label_map.xlsx
